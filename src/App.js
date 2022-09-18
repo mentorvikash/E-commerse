@@ -1,19 +1,9 @@
+import React from "react";
 function App() {
   return (
     <>
-      <div className="App">
-      this is E commerse
-      </div >
+      <h1>This E- Commerse Website please display do it make some changes</h1>
     </>
   )
 }
-
 export default App;
-
-
-
-
-
-
-
-
