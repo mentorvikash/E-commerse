@@ -1,10 +1,10 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
-import Product from '../Product';
+import Product from './product/Product';
 
 const products = [
-    { id: 1, name: "Nike Shose", describe: "One of the most popular shose used by runner." },
-    { id: 2, name: "Jack T-Shirt", describe: "Most Comfortable cotton t-shirt that you can use." },
+    { id: 1, name: "Nike Shose", describe: "One of the most popular shose used by runner.", price: "$5" },
+    { id: 2, name: "Jack T-Shirt", describe: "Most Comfortable cotton t-shirt that you can use.", price: "$10" },
 ]
 
 function Products() {
