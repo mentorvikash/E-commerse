@@ -1,8 +1,10 @@
 import React from "react";
+import Products from "./components/products/Products";
+
 function App() {
   return (
     <>
-      <h1>This E- Commerse Website please display do it make some changes</h1>
+      <Products />
     </>
   )
 }

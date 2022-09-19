@@ -1,8 +1,10 @@
 import React from 'react'
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@mui/material'
-import { ClassNames } from '@emotion/react'
+import { AddShoppingCart } from '@mui/icons-material'
+import useStyle from './style'
 
-function Product({item}) {
+function Product({item}) {  
+  const newclass = useStyle();
   return (
     <Card className={newclass.root} >
     <CardMedia className={newclass.media} image='' title={item.name}></CardMedia>
@@ -15,7 +17,13 @@ function Product({item}) {
           {item.price}
           </Typography>
         </div>
+        <Typography varient="h2" color="textSecondary">{item.describe}</Typography>
       </CardContent>
+      <CardActions disableSpacing className={newclass.cardActions} >
+      <IconButton aria-label='Add to Cart'>
+      <AddShoppingCart />
+      </IconButton>
+      </CardActions>
     </Card>
   )
 }
